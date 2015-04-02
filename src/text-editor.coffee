@@ -521,7 +521,7 @@ class TextEditor extends Model
 
     EmitterMixin::on.apply(this, arguments)
 
-  # Retrieves the current {TextBuffer}.
+  # Public: Retrieves the current {TextBuffer}.
   getBuffer: -> @buffer
 
   # Retrieves the current buffer's URI.
