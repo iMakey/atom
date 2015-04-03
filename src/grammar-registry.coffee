@@ -36,6 +36,10 @@ class GrammarRegistry extends FirstMate.GrammarRegistry
   # Returns a {Grammar}, never null.
   selectGrammar: (filePath, fileContents) -> super
 
+  clearObservers: ->
+    @off()
+    @emitter = new Emitter
+
 if includeDeprecations
   PropertyAccessors = require 'property-accessors'
   PropertyAccessors.includeInto(GrammarRegistry)
