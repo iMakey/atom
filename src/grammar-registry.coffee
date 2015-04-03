@@ -1,3 +1,4 @@
+{Emitter} = require 'event-kit'
 {includeDeprecations, deprecate} = require 'grim'
 FirstMate = require 'first-mate'
 Token = require './token'
